@@ -15,6 +15,9 @@ public class Exercise5 {
 		
 	public static void main(String a[]){
 		Singleton st = new Singleton();
-		st.doSomeThing();
+		/*
+		 * Commit Test
+		 */
+		/*st.doSomeThing();*/
 	}
 }
