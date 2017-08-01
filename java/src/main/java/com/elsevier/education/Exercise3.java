@@ -20,12 +20,26 @@ public class Exercise3 {
 			id = newId;
 		}
 		
+	
 		public int hashCode() {
-			return id * generator.nextInt();
+			//return id * generator.nextInt();
+			
+			return id;
 		}
 		
 		public boolean equals(Object other) {
-			return id.equals(((Person)other).id);
+			
+			if(other ==null)
+				return false;
+			
+			if(!(other instanceof Person))
+				return false;
+			
+			Person person = (Person)other;
+			if(person.id == null || id == null)
+				return false;
+			
+			return id.equals(person.id);
 		}
 	}
 }
